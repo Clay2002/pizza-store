@@ -1,0 +1,41 @@
+
+
+#title{
+
+font-size: 7vh;
+text-align: center;
+background-color: lightgrey;
+
+
+
+}
+
+#cart{
+    background-color: gray;
+    height: 50px;
+    width: 50px;
+
+    
+}
+
+
+#container-1{
+
+    border: black solid 2px;
+    display: grid;
+    grid-template-columns: auto, auto, auto, auto;
+
+}
+#card-1{
+
+grid-column: 1/2;
+grid-row: 1;
+
+}
+
+
+#card-2{
+    grid-row: 1;
+    grid-column: 2/3;
+}
+
