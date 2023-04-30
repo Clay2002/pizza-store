@@ -7,8 +7,13 @@ text-align: center;
 background-color: lightgrey;
 
 
-
 }
+
+
+
+
+
+
 
 #cart{
     background-color: gray;
@@ -19,17 +24,24 @@ background-color: lightgrey;
 }
 
 
+
+
+
+
+
 #container-1{
 
     border: black solid 2px;
     display: grid;
-    grid-template-columns: auto, auto, auto, auto;
-
+    grid-template-columns: auto, auto, auto;
+    margin: 25px;
+    grid-gap: 50px;
 }
 #card-1{
 
 grid-column: 1/2;
 grid-row: 1;
+border: black solid 2px;
 
 }
 
@@ -37,5 +49,163 @@ grid-row: 1;
 #card-2{
     grid-row: 1;
     grid-column: 2/3;
+    border: black solid 2px;
+
 }
 
+#card-3{
+
+    grid-column: 1/2;
+    grid-row: 2;
+    border: black solid 2px;
+  
+    }
+    
+    
+#card-4{
+    grid-row: 2;
+    grid-column: 2/3;
+    border: black solid 2px;
+   
+    }
+
+
+#card-1-title,#card-2-title,#card-3-title,#card-4-title{
+    font-size: 40px;
+}
+    
+
+
+
+
+
+
+
+
+
+#container-2{
+
+    border: black solid 3px;
+    display: grid;
+    grid-template-columns: auto, auto, auto;
+    margin: 25px;
+    grid-gap: 50px;
+
+}
+
+
+#drink-title-1,#drink-title-2,#drink-title-3,#drink-title-4{
+
+    font-size: 30px;
+
+
+}
+
+#drink-card-1{
+
+    border: black solid 3px;
+    grid-column: 1/2;
+    grid-row: 1;
+
+}
+
+#drink-card-2{
+
+    border: black solid 3px;
+    grid-column: 2/3;
+    grid-row: 1;
+    
+}
+
+#drink-card-3{
+
+    border: black solid 3px;
+    grid-column: 1/2;
+    grid-row: 2;
+    
+}
+
+#drink-card-4{
+
+    border: black solid 3px;
+    grid-column: 2/3;
+    grid-row: 2;
+    
+}
+
+
+
+
+#container-3{
+
+    border: black solid 3px;
+    display: grid;
+    grid-template-columns: auto, auto, auto;
+    margin: 25px;
+    grid-gap: 50px;
+
+}
+
+
+
+
+#wingcard-1{
+
+    border: black solid 3px;
+    grid-column: 1/2;
+    grid-row: 1;
+
+
+}
+
+
+#wingcard-2{
+
+    border: black solid 3px;
+    grid-column: 2/3;
+    grid-row: 1;
+    
+    
+}
+
+
+#wingcard-3{
+
+    border: black solid 3px;
+    grid-column: 1/2;
+    grid-row: 2;
+    
+    
+}
+
+
+#wingcard-4{
+
+    border: black solid 3px;
+    grid-column: 2/3;
+    grid-row: 2;
+    
+}
+
+#wing-title-1,#wing-title-2,#wing-title-3,#wing-title-4{
+
+    font-size: 40px;
+
+}
+
+
+
+
+#options{
+
+    border: black solid 1px;
+    text-align: center;
+}
+
+#pizza,#wings,#drinks{
+
+    padding: 10px;
+border: black solid 3px;
+
+
+}
