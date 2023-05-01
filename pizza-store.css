@@ -15,17 +15,6 @@ background-color: lightgrey;
 
 
 
-#cart{
-    background-color: gray;
-    height: 50px;
-    width: 50px;
-
-    
-}
-
-
-
-
 
 
 
@@ -136,6 +125,9 @@ border: black solid 2px;
 
 
 
+
+
+
 #container-3{
 
     border: black solid 3px;
@@ -200,12 +192,33 @@ border: black solid 2px;
 
     border: black solid 1px;
     text-align: center;
+    
 }
 
-#pizza,#wings,#drinks{
+#pizza,#wings,#drinks,#cart{
 
     padding: 10px;
-border: black solid 3px;
 
 
+}
+
+
+
+
+#container-4{
+
+
+    border: black solid 3px;
+}
+#cart-card{
+
+    border: black solid 3px;
+
+
+}
+
+#cart-title{
+
+    font-size: 35px;
+    font-weight: bold;
 }

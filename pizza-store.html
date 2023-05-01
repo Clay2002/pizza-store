@@ -15,7 +15,7 @@
 
 
 
-<button id="cart">CART</button>
+
 
 
 <div id ="options">
@@ -23,6 +23,7 @@
 <button id = "pizza">Pizza</button>
 <button id = "wings">Wings</button>
 <button id = "drinks">Drinks</button>
+<button id="cart">CART</button>
 
 </div>
 
@@ -34,8 +35,9 @@
 
              <img src="pizza.jpg" alt="pizza pic" width="150" height="150">
 
-                <button id="item-1">add to cart</button>
+                <button onclick = "Addcart1();"id="item-1">add to cart</button>
 
+                    <div>Price: $15.00</div>
 
     </div>
 
@@ -47,8 +49,9 @@
 
              <img src="pizza.jpg" alt="pizza pic" width="150" height="150">
 
-                <button id="item-2">add to cart</button>
+                <button  onclick = "Addcart2();"id="item-2">add to cart</button>
 
+                    <div>Price: $17.00</div>
     </div>
 
 
@@ -59,8 +62,9 @@
 
             <img src="pizza.jpg" alt="pizza pic" width="150" height="150">
     
-                <button id="item-3">add to cart</button>
+                <button onclick = "Addcart3();"id="item-3">add to cart</button>
 
+                    <div>Price: $20.00</div>
     </div>
 
 
@@ -71,7 +75,9 @@
 
             <img src="pizza.jpg" alt="pizza pic" width="150" height="150">
            
-                <button id="item-4">add to cart</button>
+                <button onclick = "Addcart4();"id="item-4">add to cart</button>
+
+                    <div>Price: $13.00</div>
 
     </div>
 
@@ -168,6 +174,45 @@
 
 
   
+</div>
+
+
+
+
+<div id = "container-4">
+
+
+
+
+    <div id = "cart-card">
+
+    <div id = "cart-title">My Cart</div>
+
+
+    
+    <div id = "add-tip">Tip Here:</div>
+
+
+
+<button onclick = "tip1();"id ="10">10%</button>
+<button onclick = "tip2();"id ="15">15%</button>
+<button onclick = "tip3();"id ="20">20%</button>
+
+
+
+
+    <div>Deliveray Fee: </div>
+    <div id = "fee-total">$0:00</div>
+    <div>Cart total: </div>
+    <div id = "cart-total">$0:00</div>
+    <button id = "pay-now">Pay Now!</button>
+
+
+    </div>
+
+
+
+
 </div>
 
 </body>
