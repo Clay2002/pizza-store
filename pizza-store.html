@@ -20,17 +20,22 @@
 
 <div id ="options">
 
-<button id = "pizza">Pizza</button>
-<button id = "wings">Wings</button>
-<button id = "drinks">Drinks</button>
-<button id="cart">CART</button>
+<button onclick = "containerOne()"id = "pizza">Pizza</button>
+<button onclick = "containerTwo()"id = "wings">Drinks</button>
+<button onclick = "containerThree()"id = "drinks">Wings</button>
+<button id = "cart">CART</button>
 
 </div>
 
 <div id = "container-1">
 
+
+
+
+
+
     <div id ="card-1">
-       
+     
         <div id = "card-1-title">Cheese Pizza</div>
 
              <img src="pizza.jpg" alt="pizza pic" width="150" height="150">
@@ -44,7 +49,7 @@
 
 
     <div id ="card-2">
-   
+        <button onclick = "deleteOne()"id = "delete1">x</button>
         <div id = "card-2-title">Pepperoni Pizza</div>
 
              <img src="pizza.jpg" alt="pizza pic" width="150" height="150">
@@ -97,16 +102,24 @@
 
         <img src="coke.jpg" alt="coke pic" width="150" height="150">
 
+            <button onclick = "drinkCart1();"id ="drink-1">add to cart</button>
+
+        <div>Price: $5.00</div>
+
         </div>
 
 
 
         <div id ="drink-card-2">
 
-
+            <button onclick = "deleteTwo()"id = "delete1">x</button>
         <div id = "drink-title-2">Fanta</div>
 
         <img src="fanta.jpg" alt="coke pic" width="150" height="150">
+
+        <button onclick = "drinkCart2();"id ="drink-2">add to cart</button>
+
+        <div>Price: $5.00</div>
 
         </div>
 
@@ -119,6 +132,10 @@
 
         <img src="pepsi.jpg" alt="coke pic" width="150" height="150">
 
+        <button onclick = "drinkCart3();"id ="drink-3">add to cart</button>
+
+        <div>Price: $5.00</div>
+
         </div>
 
 
@@ -130,6 +147,9 @@
 
         <img src="lemonade.jpg" alt="coke pic" width="165" height="165">
 
+        <button onclick = "drinkCart4();"id ="drink-4">add to cart</button>
+
+        <div>Price: $5.00</div>
 
         </div>
 
@@ -147,13 +167,21 @@
 
     <div id = "wing-title-1">Honey Garlic</div>
     <img src="wings.jpg" alt="coke pic" width="150" height="150">
+
+    <button onclick = "wingsCart1();"id ="drink-4">add to cart</button>
+
+        <div>Price: $8.00</div>
+
     </div>
 
 
     <div id="wingcard-2">
+        <button onclick = "deleteThree()"id = "delete1">x</button>
     <div id = "wing-title-2">BBG</div>
     <img src="wings.jpg" alt="coke pic" width="150" height="150">
+    <button onclick = "wingsCart2();"id ="drink-4">add to cart</button>
 
+    <div>Price: $8.00</div>
     </div>
 
 
@@ -161,14 +189,18 @@
 
     <div id = "wing-title-3">Teriyaki</div>
     <img src="wings.jpg" alt="coke pic" width="150" height="150">
+    <button onclick = "wingsCart3();"id ="drink-4">add to cart</button>
 
+    <div>Price: $8.00</div>
     </div>
 
     <div id="wingcard-4">
 
     <div id = "wing-title-4">Honey Mustard</div>
     <img src="wings.jpg" alt="coke pic" width="150" height="150">
+    <button onclick = "wingsCart4();"id ="drink-4">add to cart</button>
 
+    <div>Price: $8.00</div>
 
     </div>
 
@@ -190,22 +222,12 @@
 
 
     
-    <div id = "add-tip">Tip Here:</div>
 
 
-
-<button onclick = "tip1();"id ="10">10%</button>
-<button onclick = "tip2();"id ="15">15%</button>
-<button onclick = "tip3();"id ="20">20%</button>
+    <div id = "total">Cart Total: $ </div>
 
 
-
-
-    <div>Deliveray Fee: </div>
-    <div id = "fee-total">$0:00</div>
-    <div>Cart total: </div>
-    <div id = "cart-total">$0:00</div>
-    <button id = "pay-now">Pay Now!</button>
+    <button onclick = "payNow()"id = "pay-now">Pay Now!</button>
 
 
     </div>
@@ -214,6 +236,10 @@
 
 
 </div>
+
+
+
+<div id = payout></div>
 
 </body>
 </html>

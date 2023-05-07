@@ -70,8 +70,6 @@ border: black solid 2px;
 
 
 
-
-
 #container-2{
 
     border: black solid 3px;
@@ -220,5 +218,13 @@ border: black solid 2px;
 #cart-title{
 
     font-size: 35px;
+    font-weight: bold;
+}
+
+
+
+#delete1{
+
+    background-color: red;
     font-weight: bold;
 }

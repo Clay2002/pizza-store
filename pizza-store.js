@@ -1,48 +1,95 @@
 
+function payNow(){
 
+    const payNow = document.getElementById("pay-now")
+    container1.remove();
+    container2.remove();
+    container3.remove();
+    container4.remove();
 
+    let stuff = document.getElementById("payout");
+
+    stuff.innerHTML = "New Heading";
+
+};
 
 const container1  = document.getElementById("container-1")
 const container2  = document.getElementById("container-2")
 const container3  = document.getElementById("container-3")
 const container4  = document.getElementById("container-4")
 
-//tip
-const tip10 = document.getElementById("10");
-const tip15 = document.getElementById("15");
-const tip20 = document.getElementById("20");
-
-
-
-//pizza items
-const itemOne = document.getElementById("item-1")
-const itemTwo = document.getElementById("item-2")
-const itemThree = document.getElementById("item-3")
-const itemFour = document.getElementById("item-4")
 
 
 
 
+container1.style.visibility = 'hidden';
+container2.style.visibility = 'hidden';
+container3.style.visibility = 'hidden';
+
+
+//buttons for each container to be added on the page. 
+
+
+ function containerOne(){
+
+ 
+    container1.style.visibility = 'visible';
+};
+
+function deleteOne(){
+
+    const deleteOne = document.getElementById("deletedone");
+    container1.style.visibility = 'hidden';
+    
+}
+
+
+container1.style.visibility = 'hidden';
+
+function containerTwo(){
+
+
+    container2.style.visibility = 'visible';
+
+};
+
+function deleteTwo(){
+
+    const deleteTwo= document.getElementById("deletedtwo");
+    container2.style.visibility = 'hidden';
+    
+}
+
+
+function containerThree(){
+
+
+    container3.style.visibility = 'visible';
+
+};
+
+function deleteThree(){
+
+    const deleteThree= document.getElementById("deletedthree");
+    container3.style.visibility = 'hidden';
+    
+}
 
 
 
 
 
-const total = document.getElementById("cart-total")
+
+
+const total = document.getElementById("total");
 
 
 
-const cart = document.getElementById("cart");
 
 
 
 
-
-container3.remove();
-
-
-var price = ["", "","",""];
-var tip = ["","",""];
+let totalCost = [];
 
 
 
@@ -51,98 +98,109 @@ var tip = ["","",""];
 function Addcart1(){
 
 
-    price[0] = 15;
 
-    total.innerText = price[0] + price[1] + price[2] + price[3];
-   
-
-    console.log(price);
-
+     totalCost.unshift(15);
+    console.log(totalCost);
+    display();
 };
 
 function Addcart2(){
 
 
-
-    price[1] = 17;
-
-    total.innerText = price[0] + price[1] + price[2] + price[3];
-   
-    console.log(price);
-
-  
-
+    totalCost.unshift(17);
+    console.log(totalCost);
+    display();
 
 };
 function Addcart3(){
-
-    price[2] = 20;
-
-    total.innerText = price[0] + price[1] + price[2] + price[3];
-   
-    console.log(price);
-
-  
-
+    totalCost.unshift(20);
+    console.log(totalCost);
+    display();
 
 };
 
 function Addcart4(){
 
-    price[3] = 13;
-
-    total.innerText = price[0] + price[1] + price[2] + price[3];
-   
-    console.log(price);
-
-
-
-
+    totalCost.unshift(13);
+    console.log(totalCost);
+    display();
 };
 
 
 
-//tip functions
 
-function tip1(){
 
-    tip[0] = total.innerText * (10/100);
-    
-    console.log(tip[0]);
+function drinkCart1(){
 
-    console.log(tip);
+    totalCost.unshift(5);
+    console.log(totalCost);
+    display();
+}
+function drinkCart2(){
+    totalCost.unshift(5);
+    console.log(totalCost);
+    display();
 }
 
-function tip2(){
-
-    tip[1] = total.innerText * (15/100);
-    
-    console.log(tip[1]);
-
-    console.log(tip);
+function drinkCart3(){
+    totalCost.unshift(5);
+    console.log(totalCost);
+    display();
+   
 }
 
-function tip3(){
+function drinkCart4(){
 
-    tip[2] = total.innerText * (20/100);
-    
-    console.log(tip[2]);
-
-    console.log(tip);
+    totalCost.unshift(5);
+    console.log(totalCost);
+    display();
 }
 
 
-console.log(tip);
-
-console.log(price);
 
 
-//wings functions
+function wingsCart1(){
 
-
-
-//drinks functions
+    totalCost.unshift(8);
+    console.log(totalCost);
+    display();
+}
 
 
 
-var priceD = ["","","",""];
+function wingsCart2(){
+
+    totalCost.unshift(8);
+    console.log(totalCost);
+    display();
+}
+
+
+function wingsCart3(){
+
+    totalCost.unshift(8);
+    console.log(totalCost);
+    display();
+}
+
+
+function wingsCart4(){
+    totalCost.unshift(8);
+    console.log(totalCost);
+ 
+    display();
+    
+}
+
+
+
+
+function display(){
+
+    let sum = totalCost.reduce(function (a, b) {
+    return a + b;
+    }, 0);
+    total.innerText = "Cart Total: $"+(sum);
+    };
+
+
